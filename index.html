@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blog Editor</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="lefi">
+        <div id="editor">
+          <div id="tt">
+            <h2>Blog Editor</h2>
+          </div>
+          <textarea
+            id="blogContent"
+            placeholder="Write your blog here"
+            no="0"
+          ></textarea>
+          <div id="dropZone" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <p>Drag and drop images or videos here</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="preview">
+        <div id="tt">
+          <h2>Blog Preview</h2>
+        </div>
+        <div id="blogPreview">
+          <div id="txts0"></div>
+        </div>
+      </div>
+    </div>
+    <dialog id="rmm">
+      <p>Do you want to remove this image/video ?</p>
+      <form method="dialog">
+        <button value="yes" id="yyyy">Yes</button>
+        <button value="no" id="nnnn">No</button>
+      </form>
+    </dialog>
+    <script src="script.js"></script>
+  </body>
+</html>
